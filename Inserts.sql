@@ -1,10 +1,12 @@
 INSERT INTO Kunde (Name,Adresse) VALUES
 ('Tom Meier','Raucherweg 44, 50667 Köln'),
 ('Lisa Markov','Kondensatorstr. 11, 20097 Hamburg'),
-('Enrica Fermi','Ableitung 2, 80336 Stuttgart');
+('Enrica Fermi','Ableitung 2, 80336 Stuttgart'),
+('Dagobert Duck','Entenstraße 1, 12345 Entenhausen');
 
 
 INSERT INTO Artikel (ArtikelNr,Bezeichnung,Preis) VALUES
+(99010,'Handy',599.99),
 (99009,'Ladegerät',23.90),
 (99102,'Kopfhörer',145.99),
 (99222,'Weihnachtskugel',5.00),
@@ -13,12 +15,18 @@ INSERT INTO Artikel (ArtikelNr,Bezeichnung,Preis) VALUES
 (99124,'Taschenkalender',5.99),
 (31923,'Monitor', 99.98),
 (31345,'Tastatur',9.99);
+(99128,'Bugatti Veyron',1500000.00);
+(20624, 'Tastatur X', 15.99);
+
 
 
 INSERT INTO Bestellung (KundenNr,Datum) VALUES
 (1,'2018-10-30'),
 (2,'2018-11-14'),
-(1,'2018-11-14');
+(1,'2018-11-14'),
+(4,'2021-11-15'),
+(4,'2021-11-16'),
+(4,'2021-11-17');
 
 
 INSERT INTO BestellteArtikel (BestellNr,ArtikelNr,Anzahl) VALUES
